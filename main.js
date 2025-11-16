@@ -9,10 +9,5 @@ function displayPopup() {
   popUp.classList.toggle("visible");
   shareBtn.classList.toggle("pressed");
   shareImg.classList.toggle("added");
-
-  if (authorProfile.classList.contains("seen")) {
-    authorProfile.classList.remove("seen");
-  } else {
-    authorProfile.classList.add("seen");
-  }
+authorProfile.classList.toggle("seen")
 }

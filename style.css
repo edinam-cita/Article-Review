@@ -19,8 +19,8 @@ body {
 }
 
 .main-content {
-  height: 15rem;
-  width: 40rem;
+  height: 16rem;
+  width: 43rem;
   border-radius: 8px;
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -31,7 +31,7 @@ body {
   width: 100%;
   background: url(/assets/drawers.jpg) no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 1% center;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
   overflow: hidden;
@@ -39,27 +39,29 @@ body {
 
 .content {
   margin: 0;
-  padding: 2.2rem;
+  padding: 2.4rem;
   display: flex;
   flex-direction: column;
 }
 
 .content h4 {
-  font-size: 17px;
-  margin-top: -0.3rem;
+  font-size: 1.15rem;
+  margin-block-start: -0.3rem;
   font-weight: 700;
   color: #48556aff;
 }
 
 .content p {
-  margin-top: 0.5rem;
-  font-size: 11px;
+  margin-block-start: 0.7rem;
+  font-size: 0.77rem;
   color: #6d7f97ff;
   font-weight: 500;
 }
 
 .author-profile {
-  margin-top: 1rem;
+  margin-block-start: 1.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .author-profile h6 {
@@ -70,11 +72,6 @@ body {
   display: flex;
 }
 
-.author-profile {
-  display: flex;
-  justify-content: space-between;
-}
-
 .info .profile-pic {
   background: url(/assets/avatar-michelle.jpg);
   background-position: center;
@@ -82,11 +79,11 @@ body {
   border-radius: 50%;
   height: 2rem;
   width: 2rem;
-  margin-right: 1rem;
+  margin-inline-end: 1rem;
 }
 
 .name-date p {
-  margin-top: 2px;
+  margin-block-start: 2px;
 }
 
 .icon-items {
@@ -135,7 +132,7 @@ body {
 }
 
 .pop-up .icon-items {
-  margin-left: 5px;
+  margin-inline-start: 5px;
 }
 
 .icons {
@@ -152,7 +149,7 @@ body {
   border-color: #48556aff transparent transparent transparent;
 }
 
-.share {
+.outer-div .share {
   background: #6d7f97ff;
 }
 
@@ -170,8 +167,8 @@ body {
 
 @media (max-width: 680px) {
   .main-content {
-    width: 300px;
-    height: 435px;
+    width: 19rem;
+    height: 26rem;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -186,24 +183,26 @@ body {
 
   .content {
     box-sizing: border-box;
+    padding: 2rem;
   }
 
   .content h4 {
     font-size: 0.91rem;
     margin-bottom: 7px;
+    margin-block-start: 0.2rem;
   }
 
   .content p {
     line-height: 1.2rem;
-    margin-bottom: 5px;
+    margin-block-end: 5px;
     font-size: 11.7px;
   }
 
   .author-profile {
     box-sizing: border-box;
-    width: 300px;
-    margin-bottom: -2.2rem;
-    margin-left: -2.2rem;
+    width: 19.2rem;
+    margin-block-end: -2rem;
+    margin-inline-start: -2.2rem;
     padding: 0.5rem 2.2rem;
   }
 
@@ -212,7 +211,7 @@ body {
   }
 
   .pop-up {
-    display: flex;
+    display: none;
     bottom: 0;
     left: -700%;
     z-index: 1;
@@ -221,6 +220,6 @@ body {
   }
 
   .pop-up.visible {
-    display: none;
+    display: flex;
   }
 }
