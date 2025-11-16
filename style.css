@@ -19,8 +19,8 @@ body {
 }
 
 .main-content {
-  height: 16rem;
-  width: 43rem;
+  height: 17rem;
+  width: 44rem;
   border-radius: 8px;
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -34,7 +34,6 @@ body {
   background-position: 1% center;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
-  overflow: hidden;
 }
 
 .content {
